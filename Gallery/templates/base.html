@@ -1,0 +1,68 @@
+<!-- <html>
+<body>
+{% load staticfiles %}
+<p>hello</p>
+<p>{% for p in painting %}
+<div>
+    <img src="{{p.image}}" style="height:200px;width: 200px;">{{p.image}}</img>
+</div>
+{% endfor %}
+</p>
+</body>
+</html> -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Art Gallery</title>
+
+<meta name="keywords" content="art gallery, html css template, free download, templatemo.com" />
+
+<meta name="description" content="Art Gallery Template - Free HTML CSS Layout for your websites" />
+
+<link href="/static/js/templatemo_style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<div id="templatemo_container">
+
+  <div id="templatemo_topsection">
+
+    <div class="templatemo_topmenu">
+
+       <ul>
+
+        <li><a href="#">HOME</a></li>
+
+        <li><a href="#">Gallery</a></li>
+
+        <li><a href="#">ABOUT US</a></li>
+
+        <li><a href="#">CONTACT</a></li>
+       </ul>
+
+    </div>
+
+  </div>
+
+  <div id="templatemo_middlesection">
+
+    <div id="templatemo_left_content">
+
+      <div id="templatemo_left_top"><img src="/static/images/templatemo_left_photo.jpg" alt="templatemo.com" /></div>
+
+        {% block content %}
+            {% endblock %}
+
+  </div>
+
+  <div id="templatemo_footersection">Copyright © RD softwares
+</div>
+</html>
